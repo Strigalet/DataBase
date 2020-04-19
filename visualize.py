@@ -3,7 +3,6 @@ import plotly.graph_objects as go
 import chart_studio.plotly as py
 import re
 import chart_studio.dashboard_objs as dashboard
-from plotly.subplots import make_subplots
 import cx_Oracle
 
 username = 'alyosha'
