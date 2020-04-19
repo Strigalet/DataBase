@@ -88,3 +88,5 @@ while result:
 	print(result[0],'         ',result[1])
 	result = cursor.fetchone()
 
+cursor.close()
+connection.close()
