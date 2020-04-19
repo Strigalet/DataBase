@@ -3,14 +3,12 @@
 INSERT INTO AwardType (award_name) VALUES ('Gold Medal');
 INSERT INTO AwardType (award_name) VALUES ('Silver Medal');
 INSERT INTO AwardType (award_name) VALUES ('Bronze Medal');
-INSERT INTO AwardType (award_name) VALUES ('Honourable mention');
 
 -- Countries
 INSERT INTO Country (country_name) VALUES ('RUS');
 INSERT INTO Country (country_name) VALUES ('USA');
 INSERT INTO Country (country_name) VALUES ('UKR');
 INSERT INTO Country (country_name) VALUES ('CHN');
-INSERT INTO Country (country_name) VALUES ('NGA');
 
 --         Participants
 
@@ -65,12 +63,7 @@ INSERT INTO Participant (participant_id, firstname, lastname, country_name)
 VALUES (23,'Ankan','Bhattacharya','USA');
 INSERT INTO Participant (participant_id, firstname, lastname, country_name)
 VALUES (24,'Andrew','Gu','USA');
-INSERT INTO Participant (participant_id, firstname, lastname, country_name)
-VALUES (25,'Edikan Idongesit','Akpabio','NGA');
-INSERT INTO Participant (participant_id, firstname, lastname, country_name)
-VALUES (26,'Mmesomachi','Nwachukwu','NGA');
-INSERT INTO Participant (participant_id, firstname, lastname, country_name)
-VALUES (27,'Okechukwu Williams','Okeke','NGA');
+
 
 
 
@@ -127,12 +120,7 @@ INSERT INTO Award (participant_id, total, rank, award_name, year)
 VALUES (23,26,30,'Gold Medal',2017);
 INSERT INTO Award (participant_id, total, rank, award_name, year)
 VALUES (24,26,30,'Gold Medal',2017);
-INSERT INTO Award (participant_id, total, rank, award_name, year)
-VALUES (25,14,342,'Honourable mention',2017);
-INSERT INTO Award (participant_id, total, rank, award_name, year)
-VALUES (26,13,390,'Honourable mention',2017);
-INSERT INTO Award (participant_id, total, rank, award_name, year)
-VALUES (27,13,390,'Honourable mention',2017);
+
 
 
 -- Olympiad
@@ -188,9 +176,4 @@ INSERT INTO Olympiad (participant_id, year, problem_1, problem_2, problem_3, pro
 VALUES (23,2017,7,5,0,7,7,0);
 INSERT INTO Olympiad (participant_id, year, problem_1, problem_2, problem_3, problem_4, problem_5, problem_6)
 VALUES (24,2017,7,4,0,7,7,0);
-INSERT INTO Olympiad (participant_id, year, problem_1, problem_2, problem_3, problem_4, problem_5, problem_6)
-VALUES (25,2017,4,3,0,7,0,0);
-INSERT INTO Olympiad (participant_id, year, problem_1, problem_2, problem_3, problem_4, problem_5, problem_6)
-VALUES (26,2017,5,1,0,7,0,0);
-INSERT INTO Olympiad (participant_id, year, problem_1, problem_2, problem_3, problem_4, problem_5, problem_6)
-VALUES (27,2017,7,0,0,4,0,0);
+
