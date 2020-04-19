@@ -3,6 +3,8 @@
 INSERT INTO AwardType (award_name) VALUES ('Gold Medal');
 INSERT INTO AwardType (award_name) VALUES ('Silver Medal');
 INSERT INTO AwardType (award_name) VALUES ('Bronze Medal');
+INSERT INTO AwardType (award_name) VALUES ('Honourable Mention');
+INSERT INTO AwardType (award_name) VALUES ('No Award');
 
 -- Countries
 INSERT INTO Country (country_name) VALUES ('RUS');
