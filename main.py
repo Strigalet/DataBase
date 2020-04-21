@@ -26,9 +26,7 @@ ORDER BY
 
 '''
 
-
 cursor.execute(query)
-
 result = cursor.fetchone()
 
 print("FIRST QUERY")
@@ -49,9 +47,7 @@ GROUP BY award_name
 ORDER BY award_name
 '''
 
-
 cursor.execute(query)
-
 result = cursor.fetchone()
 
 print("\nSECOND QUERY")
@@ -77,9 +73,7 @@ GROUP BY year
 ORDER BY year
 '''
 
-
 cursor.execute(query)
-
 result = cursor.fetchone()
 
 print("\nTHIRD QUERY")
