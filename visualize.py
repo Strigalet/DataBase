@@ -1,9 +1,10 @@
-import chart_studio
+import cx_Oracle
 import plotly.graph_objects as go
 import chart_studio.plotly as py
 import re
+import chart_studio
 import chart_studio.dashboard_objs as dashboard
-import cx_Oracle
+
 
 username = 'alyosha'
 password = '123456789'
@@ -48,6 +49,7 @@ for i in cursor.fetchall():
     y.append(i[1])
 
 fig = go.Figure(data=[go.Bar(x=x, y=y)])
+
 fig.update_layout(xaxis=dict(title='Country'),
                   yaxis=dict(title='Amount of top 25 ranks'))
 
