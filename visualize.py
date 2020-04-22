@@ -105,33 +105,34 @@ third = py.plot(fig, filename='scatter_1')
 
 dash_board = dashboard.Dashboard()
 
+
 country_geniuses_bar = fileId_from_url(first)
 medals_pie = fileId_from_url(second)
 year_average_total_scatter = fileId_from_url(third)
 
-box_1 = {
+bar_ = {
     'type': 'box',
     'boxType': 'plot',
     'fileId': country_geniuses_bar,
     'title': 'Amount of top 25 ranks by country'
 }
 
-box_2 = {
+pie_ = {
     'type': 'box',
     'boxType': 'plot',
     'fileId': medals_pie,
     'title': 'Percentage of given awards'
 }
 
-box_3 = {
+scatter_ = {
     'type': 'box',
     'boxType': 'plot',
     'fileId': year_average_total_scatter,
     'title': 'Average total score by year'
 }
 
-dash_board.insert(box_1)
-dash_board.insert(box_2, 'below', 1)
-dash_board.insert(box_3, 'left', 2)
+dash_board.insert(bar_)
+dash_board.insert(pie_, 'below', 1)
+dash_board.insert(scatter_, 'left', 2)
 
 py.dashboard_ops.upload(dash_board, "Kasich Bogdan KM-83")
